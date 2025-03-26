@@ -10,6 +10,10 @@ A RESTful API that provides information about Mortal Kombat characters, built wi
 - Rate limiting and security features
 - Pagination and sorting capabilities
 
+## Live Demo
+
+The API is live at: https://mortal-kombat-api.onrender.com/
+
 ## Setup
 
 1. Install dependencies:
@@ -85,23 +89,29 @@ GET /characters/stats
 ## Example Usage
 
 ```bash
+# Base URL
+https://mortal-kombat-api.onrender.com/
+
 # Get all characters
-curl http://localhost:3000/characters
+curl https://mortal-kombat-api.onrender.com/characters
 
 # Get a specific character
-curl http://localhost:3000/characters/1
+curl https://mortal-kombat-api.onrender.com/characters/1
 
 # Search characters by realm
-curl http://localhost:3000/characters/search?realm=Edenia
+curl https://mortal-kombat-api.onrender.com/characters/search?realm=Edenia
 
 # Search characters by fighting style
-curl http://localhost:3000/characters/search?fighting_style=Ninjutsu
+curl https://mortal-kombat-api.onrender.com/characters/search?fighting_style=Ninjutsu
 
 # Get paginated results
-curl http://localhost:3000/characters?page=1&limit=5
+curl https://mortal-kombat-api.onrender.com/characters?page=1&limit=5
 
 # Sort characters
-curl http://localhost:3000/characters?sortBy=strength&order=desc
+curl https://mortal-kombat-api.onrender.com/characters?sortBy=strength&order=desc
+
+# Get character statistics
+curl https://mortal-kombat-api.onrender.com/characters/stats
 ```
 
 ## Response Format
@@ -124,12 +134,13 @@ Each character object includes:
 
 ## Deployment
 
-This API can be deployed to various platforms:
+This API is deployed on Render.com at https://mortal-kombat-api.onrender.com/
 
-1. Render.com
-2. Heroku
-3. Railway.app
-4. DigitalOcean App Platform
-5. AWS Elastic Beanstalk
+Alternative deployment platforms:
+
+1. Heroku
+2. Railway.app
+3. DigitalOcean App Platform
+4. AWS Elastic Beanstalk
 
 See the deployment instructions in the repository for more details.
